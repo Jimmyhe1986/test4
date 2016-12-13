@@ -20,12 +20,12 @@
       }
 
       var data = response.getDataTable();
-      var chart = new google.visualization.ColumnChart(document.getElementById("myPieChart"));
+      var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
       chart.draw(data, { height: 400 });
     }
   </script>
 </head>
 <body>
   <!-- Identify where the chart should be drawn. -->
-  <div id="myPieChart"/>
+  <div id="columnchart"/>
 </body>   
