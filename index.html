@@ -1,9 +1,9 @@
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
     google.charts.load('current', {packages: ['corechart']});
-    google.charts.setOnLoadCallback(drawSheetName);
+    google.charts.setOnLoadCallback(drawChart);
 
-     function drawSheetName() {
+     function drawChart() {
       var queryString = encodeURIComponent('SELECT A, H, O, Q, R, U LIMIT 5 OFFSET 8');
 
       var query = new google.visualization.Query(
